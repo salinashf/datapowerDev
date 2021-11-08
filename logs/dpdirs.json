@@ -1,0 +1,11 @@
+{
+  "root":"/opt/ibm/datapower",
+  "user":"/opt/ibm/datapower",
+  "var":"/opt/ibm/datapower",
+  "tmp":"/opt/ibm/datapower",
+  "raid":"/opt/ibm/datapower",
+  "b2b":"/opt/ibm/datapower",
+  "logstore":"/opt/ibm/datapower",
+  "logtemp":"/opt/ibm/datapower",
+  "lunaclient":"/opt/ibm/datapower"
+}

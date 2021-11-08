@@ -1,0 +1,10 @@
+
+docker   attach  datapowerDev	
+admin  admin 	
+# configure terminal
+# web-mgmt
+# admin-state "enabled"
+# local-address "eth0_ipv4_1" "9095"
+# idle 0
+# exit
+

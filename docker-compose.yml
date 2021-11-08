@@ -1,0 +1,22 @@
+services:
+  datapowerDev:
+    container_name: datapowerDev
+    image: ibmcom/datapower
+    privileged: true
+    environment:
+      DATAPOWER_ACCEPT_LICENSE: 'true'
+      DATAPOWER_INTERACTIVE: 'true'
+      DATAPOWER_LOG_STDOUT: 'true'
+      DATAPOWER_FAST_STARTUP: 'true'
+      DATAPOWER_WORKER_THREADS: 4
+      DP_WEB_MGMT: 'true'
+    ports:
+      - 9095:9095
+      - 9001:9010
+    volumes:
+      - ./volumens/config:/drouter/config
+      - ./volumens/local:/drouter/local
+    tty: true
+    stdin_open: true   
+version: '3'
+ 
