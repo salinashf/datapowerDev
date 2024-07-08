@@ -1,7 +1,7 @@
 services:
   datapowerDev:
     container_name: datapowerDev
-    image: ibmcom/datapower
+    image: sankeerth520/datapower
     privileged: true
     environment:
       DATAPOWER_ACCEPT_LICENSE: 'true'
@@ -14,8 +14,10 @@ services:
       - 9095:9095
       - 9001:9010
     volumes:
-      - ./volumens/config:/drouter/config
-      - ./volumens/local:/drouter/local
+      - ./volumens/default/config:/drouter/config
+      - ./volumens/default/local:/drouter/local     
+      - ./volumens/apply/config:/opt/ibm/datapower/drouter/config
+      - ./volumens/apply/local:/opt/ibm/datapower/drouter/local
     tty: true
     stdin_open: true   
 version: '3'
